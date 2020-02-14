@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="354934" started-at="2020-02-14T01:09:43 CST" finished-at="2020-02-14T01:15:38 CST">
+  <suite name="Default suite" duration-ms="41363" started-at="2020-02-14T01:55:33 CST" finished-at="2020-02-14T01:56:15 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="354934" started-at="2020-02-14T01:09:43 CST" finished-at="2020-02-14T01:15:38 CST">
+    <test name="Default test" duration-ms="41363" started-at="2020-02-14T01:55:33 CST" finished-at="2020-02-14T01:56:15 CST">
       <class name="test.NewAccountTest">
-        <test-method status="PASS" signature="initialization()[pri:0, instance:test.NewAccountTest@7f416310]" name="initialization" is-config="true" duration-ms="308864" started-at="2020-02-14T01:09:43 CST" finished-at="2020-02-14T01:14:52 CST">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:test.NewAccountTest@7f416310]" name="initialization" is-config="true" duration-ms="9292" started-at="2020-02-14T01:55:33 CST" finished-at="2020-02-14T01:55:43 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="addNewAccount()[pri:1, instance:test.NewAccountTest@7f416310]" name="addNewAccount" duration-ms="41087" started-at="2020-02-14T01:14:52 CST" finished-at="2020-02-14T01:15:33 CST">
+        <test-method status="PASS" signature="addNewAccount()[pri:1, instance:test.NewAccountTest@7f416310]" name="addNewAccount" duration-ms="27052" started-at="2020-02-14T01:55:43 CST" finished-at="2020-02-14T01:56:10 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewAccount -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:test.NewAccountTest@7f416310]" name="exitBrowser" is-config="true" duration-ms="4929" started-at="2020-02-14T01:15:33 CST" finished-at="2020-02-14T01:15:38 CST">
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:test.NewAccountTest@7f416310]" name="exitBrowser" is-config="true" duration-ms="4954" started-at="2020-02-14T01:56:10 CST" finished-at="2020-02-14T01:56:15 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->

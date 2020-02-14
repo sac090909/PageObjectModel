@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="70135" started-at="2020-02-14T07:03:21Z" finished-at="2020-02-14T07:04:32Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="70135" started-at="2020-02-14T07:03:21Z" finished-at="2020-02-14T07:04:32Z">
+      <class name="test.NewAccountTest">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:test.NewAccountTest@5f2050f6]" name="initialization" is-config="true" duration-ms="14661" started-at="2020-02-14T01:03:21Z" finished-at="2020-02-14T01:03:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="addNewAccount()[pri:1, instance:test.NewAccountTest@5f2050f6]" name="addNewAccount" duration-ms="35319" started-at="2020-02-14T01:03:51Z" finished-at="2020-02-14T01:04:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewAccount -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:test.NewAccountTest@5f2050f6]" name="exitBrowser" is-config="true" duration-ms="4804" started-at="2020-02-14T01:04:27Z" finished-at="2020-02-14T01:04:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- test.NewAccountTest -->
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="validUserShouldBeAbleToLogin()[pri:0, instance:test.LoginTest@3b81a1bc]" name="validUserShouldBeAbleToLogin" duration-ms="15310" started-at="2020-02-14T01:03:36Z" finished-at="2020-02-14T01:03:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserShouldBeAbleToLogin -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

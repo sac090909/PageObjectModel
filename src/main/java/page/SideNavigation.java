@@ -14,7 +14,7 @@ public class SideNavigation {
 
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Bank & Cash')]")
 	WebElement bankCashModule;
-	@FindBy(how = How.LINK_TEXT, using = "New Account")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'New Account')]")
 	WebElement newAccountPage;
 
 	public SideNavigation(WebDriver driver) {

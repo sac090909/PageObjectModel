@@ -36,16 +36,16 @@ public class NewAccountTest extends BaseTest {
 		String actualTitle = loginPage.getLoginPageTitle();
 		Assert.assertEquals(actualTitle, expectedTitle, "Login Page M!Smatched ..");
 		loginPage.login("techfiosdemo@gmail.com", "abc123");
-
 		waitForElememt(driver, 10, loginPage.getDashboardPageHeaderTitleElement());
+		
 		SideNavigation sideNav = PageFactory.initElements(driver, SideNavigation.class);
-
+		Thread.sleep(1000);
 		sideNav.goToBankCashModule();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		sideNav.goToNewAccountPage();
-		Thread.sleep(1000);
-		NewAccountPage newAccountPage = PageFactory.initElements(driver, NewAccountPage.class);
 		Thread.sleep(2000);
+		NewAccountPage newAccountPage = PageFactory.initElements(driver, NewAccountPage.class);
+
 		String expectedTitleNewAccountPage = "Accounts- TechFios Test Application - Billing";
 		String actualTitleNewAccountPage = newAccountPage.getNewAccountPageTitle();
 		Assert.assertEquals(actualTitleNewAccountPage, expectedTitleNewAccountPage, "New Account Page M!Smatched ..");
@@ -56,8 +56,9 @@ public class NewAccountTest extends BaseTest {
 		String rndDescriptionExpected = "Test Account By Fall19 Std " + rndAmount * 2;
 		String rndInitialBalance = String.valueOf(rndAmount);
 
-		newAccountPage.setAccountTitle(rndAccountNameExpected);
 		Thread.sleep(1000);
+		newAccountPage.setAccountTitle(rndAccountNameExpected);
+		Thread.sleep(2000);
 		newAccountPage.setDescription(rndDescriptionExpected);
 		newAccountPage.setInitialBalance(rndInitialBalance);
 		newAccountPage.clickSubmitButton();
@@ -79,15 +80,17 @@ public class NewAccountTest extends BaseTest {
 		// Without delay ElementNotInteractableException comes. Disable Implicit wait
 		// and Explicit wait to see this.
 		// Thread.sleep(2000);
+		// BrowserFactory.waitForElememt(driver, 10,
+		// dashboardPage.getAccountDeleteConfirmationOkButtonElement());
 		waitForElememt(driver, 10, newAccountPage.getAccountDeleteConfirmationOkButtonElement());
 		newAccountPage.clickOnAccountDeleteConfirmationOkButton();
 
 		// Validation of Account Delete Successfull by Assert and visually
 		Assert.assertTrue(newAccountPage.displayAcccountDeleteSuccessMessageActual().isDisplayed(),
 				"Account Delete Successfully Not Displayed !!");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		
+		Thread.sleep(2000);
 
 	}
 

@@ -22,13 +22,16 @@ public class SideNavigation {
 
 	}
 
-	public void goToBankCashModule() throws InterruptedException {
+	public void goToNewAccountPage() throws InterruptedException {
 		bankCashModule.click();
-
-	}
-
-	public void goToNewAccountPage() {
+		Thread.sleep(2000);
 		newAccountPage.click();
+		Thread.sleep(1000);
+
 	}
+
+	
+		
+	
 
 }

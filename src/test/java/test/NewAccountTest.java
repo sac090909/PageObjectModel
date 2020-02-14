@@ -25,7 +25,7 @@ public class NewAccountTest extends BaseTest {
 	public void initialization() {
 		driver = BrowserFactory.getBrowswer();
 		driver.get("http://techfios.com/test/billing/?ng=admin");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 1)
@@ -39,13 +39,10 @@ public class NewAccountTest extends BaseTest {
 		waitForElememt(driver, 10, loginPage.getDashboardPageHeaderTitleElement());
 		
 		SideNavigation sideNav = PageFactory.initElements(driver, SideNavigation.class);
-		Thread.sleep(1000);
-		sideNav.goToBankCashModule();
-		Thread.sleep(3000);
 		sideNav.goToNewAccountPage();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		
 		NewAccountPage newAccountPage = PageFactory.initElements(driver, NewAccountPage.class);
-
 		String expectedTitleNewAccountPage = "Accounts- TechFios Test Application - Billing";
 		String actualTitleNewAccountPage = newAccountPage.getNewAccountPageTitle();
 		Assert.assertEquals(actualTitleNewAccountPage, expectedTitleNewAccountPage, "New Account Page M!Smatched ..");
@@ -58,7 +55,7 @@ public class NewAccountTest extends BaseTest {
 
 		Thread.sleep(1000);
 		newAccountPage.setAccountTitle(rndAccountNameExpected);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		newAccountPage.setDescription(rndDescriptionExpected);
 		newAccountPage.setInitialBalance(rndInitialBalance);
 		newAccountPage.clickSubmitButton();
